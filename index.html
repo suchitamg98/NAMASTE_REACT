@@ -6,6 +6,18 @@
     <title>Namaste React</title>
   </head>
   <body>
-    <h1>Namaste Everyone!!!</h1>
+    <!-- 
+    #using just html     
+    <h1>Namaste Everyone!!!</h1> -->
+
+    <!-- using DOM manipulation -->
+    <div id="root"></div>
+    <script>
+      //document.createElement("h1");
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Namaste Everyone!!!";
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script>
   </body>
 </html>
