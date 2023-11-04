@@ -31,9 +31,33 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
     <script>
-      const heading = React.createElement("h1", {}, "Namaste Everyone");
+      //using React
+      const heading = React.createElement(
+        "h1",
+        {},
+        "Namaste everyone from react"
+      );
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(heading);
     </script>
+    <!-- ### creating many elements 
+      <script>
+      const heading = React.createElement(
+        "h1",
+        { id: "title" },
+        "Namaste Everyone111"
+      );
+      const heading2 = React.createElement(
+        "h1",
+        { id: "title" },
+        "Namaste Everyone222"
+      );
+      const container = React.createElement("div", { id: "container" }, [
+        heading,
+        heading2,
+      ]);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script> -->
   </body>
 </html>
