@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 //     using just html
 //     <h1>Namaste Everyone!!!</h1>
 //     using DOM manipulation
